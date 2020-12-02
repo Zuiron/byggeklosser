@@ -1,0 +1,239 @@
+/* CSS Document */
+* {
+	margin: 0;
+}
+html, body {
+	height:100%;
+	font-family: "Noto Sans","Helvetica Neue LT Pro","Helvetica Neue",'Helvetica',Arial,sans-serif;
+}
+
+img { max-width: 100%; }
+video { max-width: 100%; }
+iframe { max-width: 100%; }
+
+a { color:inherit; max-width:100%; }
+a:hover { text-decoration:underline; }
+
+.bkclipboard {
+	border: 1px solid #A5A5A5;
+    padding: 2px 1px 1px 3px;
+    border-radius: 3px;
+    color: #714000 !important;
+}
+.bkclipboard:hover {
+	cursor: pointer;
+	
+	border: 1px solid #000;
+    color: #000 !important;
+}
+.bkclipboard:active {
+	border: 1px solid #89FF00;
+	color: #89FF00 !important;
+	cursor: pointer;
+}
+
+.wrapper {
+	background-color:#FFF;
+	
+	min-height: 100%;
+	margin: 0 auto -140px;
+}
+
+#header {
+	position:relative;
+	background: url(/resources/img/bg-sky.png) repeat-x;
+	
+	-webkit-animation: slideshow 100s linear infinite;
+    -moz-animation: slideshow 100s linear infinite;
+    animation: slideshow 100s linear infinite;
+	
+	padding:20px 0px 20px 0px;
+}
+
+@-webkit-keyframes slideshow {
+  0%    { background-position: top left 0; }
+  100%  { background-position: top left -100%; }
+}
+@moz-keyframes slideshow {
+  0%    { background-position: top left 0; }
+  100%  { background-position: top left -100%; }
+}
+
+#logo {
+	text-align: center;
+	padding:20px 0 20px 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#logo img {
+	width:100%;
+	height:auto;
+	
+	max-height:120px;
+	max-width:754px;
+	
+	min-width:280px;
+}
+
+.server_container .desc {
+	min-width:100%;
+}
+
+li.active {
+	background-color:#FF8300;
+}
+
+#header_navbar {
+	margin:0 auto;
+	text-align:center;
+	background-color:#121212;
+	border-top:3px solid #FF8300;
+}
+#header_navbar ul a li {
+	display: inline-block;
+	padding: 15px 30px 15px 30px;
+}
+#header_navbar ul a {
+	display: inline-block;
+	
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000;
+	
+	font-family: 'Noto Sans',sans-serif;
+    font-weight: 300;
+	font-size: 16px;
+	
+	font-weight:bold;
+	
+	-webkit-transition: background-color .3s ease-in-out;
+}
+#header_navbar ul a:hover, #header_navbar ul a li:hover {
+	background-color:#FF8300;
+	
+	-webkit-transition: background-color .3s ease-in-out;
+}
+
+
+
+
+
+#mainwrapper {
+	width: 80%;
+	max-width:1000px;
+    margin: 0 auto;
+	padding:10px 0px 10px 0px;
+}
+
+#news {
+	font-family: 'Noto Sans',sans-serif;
+	
+	color: #FF8300;
+	font-size: 35px;
+    text-align: center;
+	
+	padding-top:30px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	
+    border-bottom: 3px dotted #FF8300;
+}
+
+.newspost a {
+	color: #FF8300;
+}
+.newspost {
+	line-height: 21px;
+    font-size: 14px;
+	color: #4C4C4C;
+	
+	padding-bottom: 5px;
+	border-bottom: 2px dotted #FF8300;
+	margin-bottom: 50px;
+}
+
+.newspost .title {
+	font-size: 30px;
+    letter-spacing: 2px;
+	margin-bottom:5px;
+	padding-top:10px;
+}
+
+.newspost .date { 
+padding:0 5px 0 5px; border-left: thin solid #C3C3C3; border-right: thin solid #C3C3C3; }
+
+.newspost .author,
+.newspost .date,
+.newspost .category {
+	display: inline-block;
+	margin-bottom:10px;
+	font-size:12px;
+}
+
+
+.footer {
+	background-color:#121212;
+	text-align:center;
+	
+	font-family: 'Noto Sans',sans-serif;
+    font-weight: 300;
+	color: #aeaeae;
+	font-size: 14px;
+}
+.footer, .push {
+	height: 140px;
+}
+
+#copyright {
+	font-size:12px;
+	color: #6e6e6e;
+}
+
+ul { list-style: none; 
+	padding: 0px;
+    margin: 0px;
+}
+
+#footer_socials ul {
+	padding-top: 20px !important;
+}
+#footer_socials ul, #footer_navbar ul {
+	padding: 5px 0px 15px 0px;
+}
+
+#footer_socials ul li {
+	display: inline-block;
+	padding: 0 15px;
+	border-right: 1px solid #353535;
+}
+
+#footer_navbar ul li {
+	display: inline-block;
+	padding: 0 15px;
+}
+
+#footer_socials ul li:last-child,
+#footer_navbar ul li:last-child { border-right: none; }
+
+@media only screen and (max-width: 1000px) {
+  /* UNDER 1000px CSS here */
+	.container_special {
+    max-width: 100% !important;
+    min-width: auto !important;
+    float: none !important;
+	}
+  
+}
+
+@media only screen and (max-width: 500px) {
+  /* UNDER 500px CSS here */
+	.person_container .username {
+		font-size: 25px !important;
+	}
+  	.server_container .status {
+		display:none;
+	}
+	#mainwrapper {
+		width:95%;
+	}
+}

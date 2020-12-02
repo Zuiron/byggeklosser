@@ -1,0 +1,14 @@
+{
+	"players":
+	{
+		"e550b6bfa24a443c88ac0a0db604c86b": "bk_staff",
+		"6bee81c37e85424ab242b3051756fec9": "bk_staff"
+	},
+	
+	"badges":
+	{
+		"latmod": "http://latvianmodder.github.io/images/badges/latmod.png",
+		"ftb": "http://latvianmodder.github.io/images/badges/ftb.png",
+		"bk_staff": "http://www.byggeklosser.net/resources/img/bk_staff_badge.png"
+	}
+}
